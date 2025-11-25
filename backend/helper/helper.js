@@ -1,9 +1,9 @@
 require('dotenv').config()
 const OpenAI = require('openai')
-const appConfig = require("../config/app-secret-key.json")
+// const appConfig = require("../config/app-secret-key.json")
 
 const client = new OpenAI({
-    apiKey: appConfig['chatGPTApiKey'] || process.env.CHATGPTAPIKEY
+    apiKey: process.env.CHATGPTAPIKEY
 })
 
 const isGreetingMessage = (message) =>{
