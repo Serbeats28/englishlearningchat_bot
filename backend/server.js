@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const cookieParser = require('cookie-parser')
-const appConfig = require('./config/app-secret-key.json') 
+// const appConfig = require('./config/app-secret-key.json') 
 const cors = require('cors') 
 const routes = require('./router/routes')
 const PORT = 2800
