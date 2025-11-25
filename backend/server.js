@@ -6,7 +6,7 @@ const appConfig = require('./config/app-secret-key.json')
 const cors = require('cors') 
 const routes = require('./router/routes')
 const PORT = 2800
-const apiKey = appConfig['api-key'] || process.env.APIKEY
+const apiKey = process.env.APIKEY
 
 app.use(cookieParser())
 app.use(express.urlencoded({extended: true}))
